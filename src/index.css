@@ -1,0 +1,96 @@
+body {
+  margin: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .books-search-form {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+header .books-search-form,
+.book-card {
+  margin-bottom: 2rem;
+}
+
+.books .books-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  width: 25%;
+  display: inline-flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.book-card img {
+  align-self: center;
+}
+
+.no-results-title {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer input {
+  padding: 0.5rem 4rem;
+}
+
+/* Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .books .books-cards {
+    flex-direction: column;
+  }
+
+  .book-card {
+    width: 90%;
+  }
+  
+  footer input {
+    padding: 0.5rem 2rem;
+  }
+}
+
+
+/* Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .books .books-cards {
+    flex-direction: column;
+  }
+
+  .book-card {
+    width: 90%;
+  }
+
+  footer input {
+    padding: 0.5rem 2rem;
+  }
+}
